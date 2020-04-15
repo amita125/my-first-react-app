@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
@@ -29,30 +29,45 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Dummy</p>
+        <p>
+          Name: <br></br>JobTitle :{" "}
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          github
+          Github
           <span>https://reactjs.org</span>
         </a>
       </header>
-      <div className="programmingLanguage">
-        <p className="intro">
-          anything about yourself please do fill more to add
-        </p>
-        <ul>
-          {programming.map(function (item) {
-            return (
-              <li key={item.id}>
-                {item.name} <span> Skill Level : {item.skill}</span>
-              </li>
-            );
-          })}
-        </ul>
+      <div class="main">
+        <div className="introduction">
+          <p className="intro">
+            anything about yourself please do fill more to add:
+            <br></br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            perferendis rerum culpa provident eius possimus aperiam consequatur
+            hic. Dicta officiis saepe et mollitia numquam quos eligendi
+            excepturi fuga laborum eius.Illum quam molestiae quibusdam expedita
+            earum similique minima consectetur totam distinctio amet temporibus
+            fugit eius pariatur quidem consequatur sunt repellat, aspernatur
+            ipsam aliquam quisquam. Ea voluptatum incidunt adipisci maxime
+            libero!
+          </p>
+        </div>
+        <div className="programming">
+          <ul>
+            {programming.map(function (item) {
+              return (
+                <li key={item.id}>
+                  {item.name} <span> Skill Level : {item.skill}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );
